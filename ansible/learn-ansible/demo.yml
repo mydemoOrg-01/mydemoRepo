@@ -1,5 +1,5 @@
 ---
-- name: Print sample text
+- name: Print sample text-1
   hosts: localhost
   tasks:
     - name: Print statement-1
@@ -9,3 +9,14 @@
     - name: Print statement-2
       ansible.builtin.debug:
         msg: Yes yes I can do this.
+
+- name: Print sample text-2
+  hosts: localhost
+  tasks:
+    - name: Print statement-3
+      ansible.builtin.debug:
+        msg: I will learn somthing new today.
+
+    - name: Print statement-4
+      ansible.builtin.debug:
+        msg: I will prove myself.
