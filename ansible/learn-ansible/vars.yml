@@ -1,0 +1,23 @@
+---
+- name: Play for Variables
+  hosts: localhost
+  vars:
+    var_play: Global
+  tasks:
+    - name: Print sample text-1
+      ansible.builtin.debug:
+        msg: My variable is {{var_play}}
+
+    - name: Print sample text-2
+      ansible.builtin.debug:
+        msg: Hi this is my {{var_play}} variable
+
+    - name: Print sample text-3
+      ansible.builtin.debug:
+        msg: So my variable is {{var_task}}
+      vars:
+        var_task: Local
+
+    - name: Print sample text-4
+      ansible.builtin.debug:
+        msg: Variable {{var_custom}}
