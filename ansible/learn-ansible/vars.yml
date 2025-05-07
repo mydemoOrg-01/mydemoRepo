@@ -21,3 +21,4 @@
     - name: Print sample text-4
       ansible.builtin.debug:
         msg: Variable {{var_custom}}
+#ansible-playbook -e "var_custom='User defined" vars.yml
