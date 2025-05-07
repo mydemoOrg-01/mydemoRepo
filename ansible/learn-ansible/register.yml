@@ -1,6 +1,6 @@
 ---
 - name: Play for Register
-  hosts: localhosts
+  hosts: localhost
   tasks:
     - name: demo
       ansible.builtin.shell: uptime
