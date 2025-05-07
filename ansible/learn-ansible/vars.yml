@@ -2,7 +2,7 @@
 - name: Play for Variables
   hosts: localhost
   vars:
-    var_play: Global
+    var_play: Global Variable
   tasks:
     - name: Print sample text-1
       ansible.builtin.debug:
@@ -16,7 +16,7 @@
       ansible.builtin.debug:
         msg: So my variable is {{var_task}}
       vars:
-        var_task: Local
+        var_task: Local Variable
 
     - name: Print sample text-4
       ansible.builtin.debug:
