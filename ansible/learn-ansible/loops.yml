@@ -4,7 +4,7 @@
   tasks:
     - name: Print fruits name
       ansible.builtin.debug:
-        msg: My fruit name is {{ item }}
+        msg: My fruit name is {{ menu }}
       loop:
         - apple
         - banana
