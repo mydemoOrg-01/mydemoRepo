@@ -1,5 +1,5 @@
 ---
-- name: Play for loops
+- name: Play for loops-1
   hosts: localhost
   tasks:
     - name: Print fruits name
@@ -9,3 +9,14 @@
         - apple
         - banana
         - orange
+
+- name: Play for loops-2
+  hosts: localhost
+  tasks:
+    - name: Print fruits name with quantity
+      ansible.builtin.debug:
+        msg: My fruit name is {{ item.name }} and the quantity is {{ item.quantity }}
+      loop:
+        - { name: apple, quantity: 3 }
+        - { name: banana, quantity: 2 }
+        - { name: orange, quantity: 1 }
