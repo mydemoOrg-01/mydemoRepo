@@ -1,0 +1,8 @@
+---
+- name: Play to copy
+  hosts: localhost
+  tasks:
+    - name: Copy files
+      ansible.builtin.copy:
+        src: example.conf
+        dest: /tmp/copy-example.conf
