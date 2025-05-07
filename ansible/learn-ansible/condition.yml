@@ -1,0 +1,15 @@
+---
+- name: Play for conditions
+  hosts: localhost
+  tasks:
+    - name: Print statement-1
+      ansible.builtin.debug:
+        msg: Vegetables
+      when:
+        type: v
+
+    - name: Print statement-2
+      ansible.builtin.debug:
+        msg: Fruits
+      when:
+        type: f
