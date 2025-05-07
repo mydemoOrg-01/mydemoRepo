@@ -2,7 +2,12 @@
 - name: Play to copy
   hosts: localhost
   tasks:
-    - name: Copy files
+    - name: Using Copy Module
       ansible.builtin.copy:
         src: example.conf
-        dest: /tmp/copy-example.conf
+        dest: /tmp/copy1-example.conf
+
+    - name: Using Template Module
+      ansible.builtin.template:
+        src: example.conf
+        dest: /tmp/copy2-example.conf
