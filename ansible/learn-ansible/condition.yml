@@ -5,9 +5,9 @@
     - name: Print statement-1
       ansible.builtin.debug:
         msg: Vegetables
-      when: type == "v"
+      when: type == v
 
     - name: Print statement-2
       ansible.builtin.debug:
         msg: Fruits
-      when: type == "f"
+      when: type == f
