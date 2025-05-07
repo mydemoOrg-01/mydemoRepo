@@ -2,6 +2,10 @@
 - name: Print sample text
   hosts: localhost
   tasks:
-    - name: Print statement
+    - name: Print statement-1
       ansible.builtin.debug:
-        msg: I can do it
+        msg: I can do it.
+
+    - name: Print statement-2
+      ansible.builtin.debug:
+        msg: Yes yes I can do this.
