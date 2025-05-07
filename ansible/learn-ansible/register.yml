@@ -1,0 +1,11 @@
+---
+- name: Play for Register
+  hosts: localhosts
+  tasks:
+    - name: demo
+      ansible.builtin.shell: uptime
+      register: OUTPUT
+
+    - name: Printing Output
+      ansible.builtin.debug:
+        msg: Output is- {{ OUTPUT.stdout }}
