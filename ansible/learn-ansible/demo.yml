@@ -1,0 +1,7 @@
+---
+- name: Print sample text
+  host: localhost
+  tasks:
+    - name: Print statement
+      ansible.builtin.debug:
+        msg: I can do it
