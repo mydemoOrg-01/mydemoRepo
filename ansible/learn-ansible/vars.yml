@@ -20,4 +20,4 @@
 
     - name: Print sample text-4
       ansible.builtin.debug:
-        msg: Variable {{var_custom}}
+        msg: Variable {{var_task}}
